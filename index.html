@@ -136,6 +136,8 @@
     $('sender').addEventListener('change',typeLetter);
     $('shareLink').addEventListener('click',async()=>{
       const url=new URL(location.href);url.search='';url.hash='';
+      // Link gửi đi luôn mở ở chế độ xem thiệp, không hiện giao diện quản trị.
+      url.searchParams.set('view','card');
       url.searchParams.set('to',$('relation').value);
       if($('recipient').value.trim())url.searchParams.set('name',$('recipient').value.trim());
       if($('sender').value.trim())url.searchParams.set('from',$('sender').value.trim());
