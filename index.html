@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff4f1" />
+  <meta name="description" content="Một món quà nhỏ, tràn đầy yêu thương nhân ngày Phụ nữ Việt Nam 20/10." />
+  <title>Góc Yêu Thương · Mừng Ngày 20/10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== 1. CHỦ ĐỀ: thay màu tại đây ===== */
+    :root{--wine:#74394c;--wine-deep:#51283a;--rose:#c97787;--blush:#f8dce0;--cream:#fffaf6;--paper:#fffdfb;--gold:#b98a5c;--ink:#5c4850;--shadow:0 24px 70px rgba(107,52,66,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font-family:'DM Sans',sans-serif;color:var(--ink);background:linear-gradient(160deg,#fff8f3 0%,#fce9e9 50%,#fff6e9 100%);overflow-x:hidden}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #d89967;outline-offset:3px}button:disabled{opacity:.6;cursor:wait}a{color:inherit}::selection{background:#f4c0c8}
+    .ambient{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.glow{position:absolute;border-radius:100%;filter:blur(8px);opacity:.55}.glow.one{width:490px;height:490px;background:radial-gradient(circle,#ffd2da,transparent 70%);left:-180px;top:-160px}.glow.two{width:600px;height:600px;background:radial-gradient(circle,#fbe4c6,transparent 70%);right:-240px;bottom:-190px}.petal{position:absolute;top:-10%;color:#e6a0aa;opacity:.55;animation:fall linear infinite;user-select:none}.petal:nth-child(5n){color:#d9aa7d}.petal:nth-child(3n){opacity:.32}@keyframes fall{from{transform:translate3d(0,-8vh,0) rotate(0)}to{transform:translate3d(85px,116vh,0) rotate(390deg)}}
+    .shell{position:relative;z-index:1;max-width:1120px;margin:auto;padding:0 26px 84px}.topbar{height:86px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:10px;color:var(--wine);font-family:'Playfair Display',serif;font-size:18px;font-weight:700;text-decoration:none}.brand-mark{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:#fff8f2;border:1px solid #e6c7c0;font-family:serif;font-size:22px}.topnote{font-size:12px;text-transform:uppercase;letter-spacing:2.7px;color:#a3757c;font-weight:700}.intro{text-align:center;min-height:calc(100svh - 120px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px 0 80px}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3.6px;text-transform:uppercase;font-weight:700}.intro-art{height:230px;width:270px;position:relative;display:grid;place-items:center;margin:0 auto 12px}.art-orbit{position:absolute;width:220px;height:220px;border-radius:50%;border:1px solid #e4bab9;background:radial-gradient(circle,#fff9f4 0%,#fce8e7 64%,transparent 70%);box-shadow:0 0 0 18px rgba(255,255,255,.2),0 0 0 38px rgba(255,255,255,.13)}.art-rose{position:relative;font-size:120px;filter:drop-shadow(0 14px 14px #ac637044);animation:float 4s ease-in-out infinite}.art-spark{position:absolute;font-size:23px;color:var(--gold);animation:twinkle 2.5s ease-in-out infinite}.art-spark.a{top:30px;right:20px}.art-spark.b{left:13px;bottom:39px;animation-delay:.8s}.art-spark.c{top:50px;left:26px;animation-delay:1.4s}@keyframes float{50%{transform:translateY(-11px) rotate(4deg)}}@keyframes twinkle{50%{transform:scale(1.3);opacity:.35}}h1,h2,h3,p{margin-top:0}.intro h1{font-family:'Playfair Display',serif;color:var(--wine-deep);font-size:clamp(44px,6.7vw,78px);line-height:1.12;font-weight:500;letter-spacing:-1.8px;margin:17px 0 10px}.intro h1 em{display:block;font-family:'Great Vibes',cursive;font-weight:400;font-style:normal;color:var(--rose);font-size:clamp(59px,8vw,100px);margin-top:5px;letter-spacing:0}.intro-desc{line-height:1.9;max-width:480px;color:#8f6e73;font-size:15px;margin:15px auto 27px}.btn{border:0;min-height:49px;display:inline-flex;justify-content:center;align-items:center;gap:9px;border-radius:999px;padding:14px 24px;font-weight:700;transition:transform .2s,box-shadow .2s,background .2s}.btn:hover{transform:translateY(-3px)}.btn-primary{background:linear-gradient(115deg,#7b4055,#a95e70);color:#fff;box-shadow:0 12px 25px #7b40552e}.btn-secondary{color:var(--wine);background:#fff9f7;border:1px solid #e7cbd0}.btn-soft{color:#9a5166;background:#fbe9ea}.hint{font-size:12px;color:#ab8a89;margin:18px 0 0;letter-spacing:.5px}.hide{display:none!important}.revealed{animation:reveal .85s ease both}@keyframes reveal{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    .welcome{text-align:center;padding:40px 0 30px}.welcome h2{font-size:clamp(36px,5vw,56px);font-family:'Playfair Display',serif;font-weight:500;color:var(--wine);margin:12px 0}.script{font-family:'Great Vibes',cursive;color:var(--rose);font-size:clamp(35px,5vw,57px);line-height:1.2}.divider-art{display:flex;align-items:center;justify-content:center;gap:18px;margin:22px 0;color:var(--gold)}.divider-art:before,.divider-art:after{content:"";height:1px;width:70px;background:#dcbfb3}.card{background:rgba(255,253,251,.86);border:1px solid #fff;box-shadow:var(--shadow);border-radius:27px;backdrop-filter:blur(14px)}.letter-layout{display:grid;grid-template-columns:0.95fr 1.25fr;gap:28px;align-items:stretch}.settings{padding:34px}.tiny-label{font-size:11px;color:#b1847e;letter-spacing:2.6px;text-transform:uppercase;font-weight:700}.settings h3,.section-heading h3{font-family:'Playfair Display',serif;font-size:29px;font-weight:500;color:var(--wine);margin:13px 0 10px}.desc{font-size:14px;line-height:1.8;color:#937780}.field{display:flex;flex-direction:column;gap:8px;margin-top:17px}.field label{font-size:13px;color:#835d68;font-weight:700}.field input,.field select{width:100%;border:1px solid #ecd8d8;border-radius:12px;padding:13px 14px;outline:none;background:#fffaf9;color:var(--wine);font-size:14px}.field input:focus,.field select:focus{border-color:#bb7988;box-shadow:0 0 0 3px #f1d8dd}.settings-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.settings-actions .btn{font-size:13px;padding:12px 16px}.letter-wrap{padding:34px 31px;display:flex;align-items:center;justify-content:center;perspective:1200px;background:linear-gradient(135deg,#fbeced,#fdf4e9);overflow:hidden;position:relative}.letter-wrap:before{content:"";position:absolute;inset:14px;border:1px solid #ffffffa8;border-radius:21px;pointer-events:none}.letter{position:relative;width:100%;max-width:480px;min-height:418px;padding:36px 35px;background:#fffcf7;border-radius:8px;box-shadow:0 10px 35px #995d632a;transform-origin:left center;animation:openLetter 1.25s cubic-bezier(.16,1,.3,1) both}.letter:before{content:"";position:absolute;inset:10px;border:1px solid #e8d5c3;pointer-events:none}.letter:after{content:"✿";position:absolute;bottom:18px;right:23px;color:#c79b80;font-size:22px}.letter-date{text-align:right;font-family:'Playfair Display',serif;color:#af8e7b;font-size:13px}.letter-title{font-family:'Great Vibes',cursive;font-size:43px;color:var(--wine);margin:24px 0 16px}.letter-text{font-family:'Playfair Display',serif;font-size:17px;line-height:2;color:#755760;white-space:pre-line;min-height:155px}.cursor{display:inline-block;width:2px;height:17px;vertical-align:-3px;background:#b46d7a;animation:blink .8s steps(2) infinite}.letter-sign{font-family:'Great Vibes',cursive;color:#ad7380;font-size:31px;text-align:right;margin-top:12px}@keyframes openLetter{from{opacity:0;transform:rotateY(-75deg) translateX(20px) scale(.92)}to{opacity:1;transform:rotateY(0) translateX(0) scale(1)}}@keyframes blink{50%{opacity:0}}
+    .section{margin-top:70px}.section-heading{text-align:center;margin-bottom:26px}.section-heading h3{font-size:34px;margin-top:7px}.wish-panel{padding:32px;text-align:center;max-width:760px;margin:auto;background:linear-gradient(140deg,#fffdfa,#fff4f1)}.wish-symbol{font-size:35px}.wish-output{font-family:'Playfair Display',serif;font-size:clamp(18px,2.8vw,24px);color:#704253;line-height:1.7;min-height:90px;display:grid;place-items:center;transition:opacity .2s}.wish-panel .btn{margin-top:14px}.gallery-note{text-align:center;font-size:13px;color:#a08283;margin:-4px 0 20px}.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.photo{min-height:240px;aspect-ratio:3/4;position:relative;border-radius:18px;overflow:hidden;background:linear-gradient(135deg,#f5d7d7,#fff0e5);border:5px solid #fffcf9;box-shadow:0 12px 29px #8a536019}.photo img{width:100%;height:100%;object-fit:cover;display:block}.photo .placeholder{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:15px;color:#a76f7c;font-family:'Playfair Display',serif;text-align:center}.photo .placeholder .emoji{font-size:54px}.photo-tools{position:absolute;bottom:0;left:0;right:0;padding:32px 8px 11px;background:linear-gradient(transparent,#3c223587);display:flex;align-items:center;justify-content:center;gap:6px;opacity:0;transition:opacity .2s}.photo:hover .photo-tools,.photo:focus-within .photo-tools{opacity:1}.photo-tools button{border:1px solid #ffffff66;background:#fff9;color:#fff;padding:8px 12px;border-radius:999px;font-size:12px}.photo-label{position:absolute;top:14px;left:12px;background:#fff9f5cf;color:#8b6070;padding:6px 10px;border-radius:999px;font-size:11px}.album-controls{margin-top:19px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.album-controls input{flex:1;max-width:460px;min-width:210px;border:1px solid #ecd8d8;background:#fffaf9;border-radius:999px;padding:11px 16px;color:#784f5b}.album-controls select{border:1px solid #ecd8d8;background:#fffaf9;border-radius:999px;padding:11px 14px;color:#784f5b}.album-info{margin-top:10px;text-align:center;color:#a18588;font-size:12px}.love-box{text-align:center;margin:70px auto 0;padding:36px 20px 8px}.love-box h3{font-family:'Playfair Display',serif;font-size:30px;font-weight:500;color:var(--wine);margin:12px 0}.love-box p{color:#977880;font-size:14px}.heart-btn{border:0;display:grid;place-items:center;margin:22px auto 12px;width:90px;height:90px;border-radius:50%;font-size:43px;background:radial-gradient(circle,#fce0e1,#f6b8c3);box-shadow:0 10px 32px #b5697950;transition:transform .2s}.heart-btn:hover{transform:scale(1.1)}.heart-btn:active{transform:scale(.93)}.heart-count{font-size:13px;color:#ac7b82}.flying-heart{position:fixed;pointer-events:none;z-index:20;font-size:25px;animation:heartFly 1.7s ease-out forwards}@keyframes heartFly{to{transform:translate(var(--dx),-220px) rotate(var(--rot));opacity:0}}footer{text-align:center;padding-top:65px;color:#ad8b8e;font-size:12px;letter-spacing:1px}.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%) translateY(20px);background:#663849;color:#fff;border-radius:15px;padding:13px 20px;z-index:40;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;font-size:13px;max-width:90vw;text-align:center}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+    @media(max-width:800px){.letter-layout{grid-template-columns:1fr}.letter-wrap{min-height:440px}.gallery{grid-template-columns:repeat(2,1fr)}.photo{min-height:180px}.photo-tools{opacity:1}.topbar{height:65px}.topnote{letter-spacing:1px;font-size:10px}}@media(max-width:520px){.shell{padding:0 15px 56px}.intro{min-height:calc(100svh - 90px)}.intro-art{height:185px;width:225px}.art-orbit{width:170px;height:170px}.art-rose{font-size:90px}.intro-desc{font-size:14px}.brand{font-size:15px}.topnote{font-size:9px;letter-spacing:.7px}.settings{padding:26px 20px}.letter-wrap{padding:25px 15px}.letter{padding:30px 25px;min-height:435px}.letter-title{font-size:38px}.letter-text{font-size:15px}.section{margin-top:55px}.gallery{gap:11px}.photo{border-width:3px}.photo-label{font-size:10px;left:6px;top:8px}.photo-tools button{font-size:11px;padding:7px 9px}.album-controls input,.album-controls select{width:100%;max-width:none}.welcome{padding-top:24px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <div class="ambient" id="ambient" aria-hidden="true"><div class="glow one"></div><div class="glow two"></div></div>
+  <div class="shell">
+    <header class="topbar"><a class="brand" href="#" aria-label="Góc Yêu Thương"><span class="brand-mark">✿</span> Góc Yêu Thương</a><span class="topnote">20 · 10 · 2026</span></header>
+    <!-- ===== 2. MÀN HÌNH CHÀO ===== -->
+    <main id="intro" class="intro">
+      <div class="eyebrow">Một món quà từ trái tim</div>
+      <div class="intro-art" aria-hidden="true"><span class="art-orbit"></span><span class="art-rose">💐</span><span class="art-spark a">✧</span><span class="art-spark b">✦</span><span class="art-spark c">✧</span></div>
+      <h1>Ngày của <em>những đóa hoa</em></h1>
+      <p class="intro-desc">Có những yêu thương chẳng cần lời hoa mỹ. Hôm nay, chỉ muốn gửi đến người phụ nữ đặc biệt một điều ngọt ngào…</p>
+      <button class="btn btn-primary" id="openGift">Chạm để mở món quà 20/10 🌸 <span aria-hidden="true">↗</span></button>
+      <p class="hint">Một chút bất ngờ đang chờ bên trong ✨</p>
+    </main>
+    <!-- ===== 3. THIỆP VÀ PHẦN TÙY CHỈNH ===== -->
+    <main id="gift" class="hide" aria-live="polite">
+      <div class="welcome"><div class="eyebrow">Happy Vietnamese Women's Day</div><h2>Chúc mừng ngày <span style="white-space:nowrap">20/10</span></h2><div class="script">You are so loved ♡</div><div class="divider-art">✿</div></div>
+      <div class="letter-layout">
+        <section class="card settings" aria-label="Tùy chỉnh người nhận"><div class="tiny-label">Dành riêng cho bạn</div><h3>Gửi người thương mến</h3><p class="desc">Chọn người nhận và điền tên để bức thư trở nên đặc biệt hơn. Bạn có thể gửi link cá nhân hóa cho người ấy.</p>
+          <div class="field"><label for="relation">Bạn muốn gửi tặng ai?</label><select id="relation"><option value="mom">Mẹ yêu</option><option value="lover">Vợ / Người yêu</option><option value="teacher">Cô giáo</option><option value="friend">Bạn bè / Đồng nghiệp</option></select></div>
+          <div class="field"><label for="recipient">Tên người nhận (tùy chọn)</label><input id="recipient" maxlength="45" placeholder="Ví dụ: Mẹ Lan, Hương, Cô Mai…" autocomplete="off" /></div>
+          <div class="field"><label for="sender">Người gửi (tùy chọn)</label><input id="sender" maxlength="45" placeholder="Ví dụ: Con của mẹ, Anh, Tập thể lớp…" autocomplete="off" /></div>
+          <div class="settings-actions"><button class="btn btn-primary" id="updateCard">💌 Cập nhật thiệp</button><button class="btn btn-secondary" id="shareLink">🔗 Sao chép link</button></div>
+        </section>
+        <section class="card letter-wrap" aria-label="Thiệp chúc mừng"><article class="letter" id="letter"><div class="letter-date">Ngày 20 tháng 10 ♡</div><div class="letter-title" id="letterTo">Gửi Mẹ yêu,</div><div class="letter-text"><span id="typedText"></span><span class="cursor" id="typingCursor"></span></div><div class="letter-sign" id="letterFrom">Thương thật nhiều ♡</div></article></section>
+      </div>
+      <!-- ===== 4. THÔNG ĐIỆP MAY MẮN ===== -->
+      <section class="section" aria-labelledby="wishHeading"><div class="section-heading"><div class="tiny-label">Một điều bất ngờ nho nhỏ</div><h3 id="wishHeading">Hộp lời chúc nhiệm màu</h3><p class="desc">Mỗi lần chạm là một lời thương gửi đến bạn.</p></div><div class="card wish-panel"><div class="wish-symbol" aria-hidden="true">🎁</div><div class="wish-output" id="wishOutput" aria-live="polite">“Bạn xứng đáng với những điều dịu dàng nhất trên đời.”</div><button id="drawWish" class="btn btn-primary">✨ Nhận một lời chúc mới</button></div></section>
+      <!-- ===== 5. ALBUM ẢNH ===== -->
+      <section class="section" aria-labelledby="galleryHeading"><div class="section-heading"><div class="tiny-label">Những khoảnh khắc đáng nhớ</div><h3 id="galleryHeading">Album của yêu thương</h3></div><p class="gallery-note">Chạm vào “Thay ảnh” trên từng khung, hoặc dán URL bên dưới. Ảnh tải lên chỉ lưu trong trình duyệt hiện tại.</p><div class="gallery" id="gallery"></div><div class="album-controls"><select id="photoSlot" aria-label="Chọn khung ảnh"><option value="0">Khung ảnh 1</option><option value="1">Khung ảnh 2</option><option value="2">Khung ảnh 3</option><option value="3">Khung ảnh 4</option></select><input type="url" id="photoUrl" placeholder="Dán link ảnh https://…" aria-label="Đường dẫn ảnh" /><button id="applyPhotoUrl" class="btn btn-secondary">Áp dụng ảnh</button></div><p class="album-info">Mẹo: để ảnh hiển thị cho người nhận trên thiết bị khác, hãy dùng URL ảnh công khai trong mục album của mã nguồn.</p><input type="file" id="photoFile" accept="image/*" class="hide" aria-label="Tải ảnh" /></section>
+      <!-- ===== 6. TIM BAY ===== -->
+      <section class="love-box"><div class="tiny-label">Gửi thêm chút yêu thương</div><h3>Thả một chiếc tim, nhận một nụ cười</h3><p>Mỗi nhịp tim là một lời cảm ơn vì bạn đã ở đây 💗</p><button class="heart-btn" id="heartBtn" aria-label="Thả tim" title="Chạm để thả tim">❤️</button><div class="heart-count">Đã gửi <strong id="heartCount">0</strong> trái tim yêu thương</div></section>
+      <footer>Made with ♡ · Góc Yêu Thương · 20/10</footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    'use strict';
+    /* ===== 7. TÙY CHỈNH NỘI DUNG: sửa lời chúc ở đây ===== */
+    const GREETINGS = {
+      mom: { label: 'Mẹ yêu', signature: 'Con yêu Mẹ nhiều lắm ♡', body: 'Cảm ơn Mẹ vì những yêu thương chẳng bao giờ vơi, vì mỗi bữa cơm ấm và mỗi lần lặng lẽ lo cho con.\n\nNgày 20/10, con chỉ mong Mẹ luôn khỏe mạnh, bình an và có thật nhiều lý do để mỉm cười. Mẹ xứng đáng với tất cả những điều đẹp nhất trên đời.' },
+      lover: { label: 'Em yêu', signature: 'Luôn thương em ♡', body: 'Thật may mắn vì giữa biết bao người, chúng ta đã tìm thấy nhau. Cảm ơn em đã khiến những ngày bình thường trở nên rực rỡ và dịu dàng hơn.\n\nNhân ngày 20/10, mong em luôn hạnh phúc, tự tin và được yêu thương theo cách em xứng đáng. Anh sẽ luôn trân trọng những khoảnh khắc có em.' },
+      teacher: { label: 'Cô kính mến', signature: 'Với lòng biết ơn sâu sắc ♡', body: 'Cảm ơn Cô đã luôn kiên nhẫn, tận tâm và truyền cảm hứng cho bao thế hệ học trò. Những bài học và tình yêu thương của Cô sẽ mãi là hành trang quý giá.\n\nNhân ngày 20/10, kính chúc Cô thật nhiều sức khỏe, niềm vui và hạnh phúc bên gia đình cùng những người thân yêu.' },
+      friend: { label: 'Bạn thân mến', signature: 'Gửi bạn thật nhiều yêu thương ♡', body: 'Cảm ơn bạn đã mang đến những tiếng cười, nguồn năng lượng tích cực và biết bao điều tốt đẹp. Dù bận rộn đến đâu, mong bạn vẫn luôn dành thời gian yêu thương chính mình.\n\nChúc bạn một ngày 20/10 ngập tràn niềm vui, tự tin tỏa sáng và luôn được trân trọng như chính con người tuyệt vời của bạn.' }
+    };
+    const WISHES = [
+      'Chúc bạn mỗi sáng thức dậy đều có một điều nhỏ xinh để mong chờ. 🌷',
+      'Mong mọi yêu thương bạn trao đi đều trở về, thật dịu dàng và đủ đầy. 💗',
+      'Bạn là một phiên bản độc nhất, và điều đó thật đẹp. ✨',
+      'Chúc bạn luôn đủ mạnh mẽ để theo đuổi ước mơ, đủ dịu dàng để yêu bản thân. 🌸',
+      'Hôm nay và mọi ngày, mong nụ cười luôn ở lại trên môi bạn. ☀️',
+      'Mong thế giới đối xử với bạn bằng tất cả sự tử tế mà bạn xứng đáng. 🦋',
+      'Chúc trái tim bạn luôn ấm và hành trình phía trước luôn ngập nắng. 💐',
+      'Bạn không cần hoàn hảo để trở nên tuyệt vời. Hãy cứ là chính mình! 💫'
+    ];
+    /* Thay các chuỗi trống bằng URL công khai để ảnh đi theo khi deploy. Ví dụ: 'https://example.com/photo.jpg' */
+    const DEFAULT_PHOTOS = ['', '', '', ''];
+    const $ = (id) => document.getElementById(id);
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const qs = new URLSearchParams(location.search);
+    const relationFromUrl = qs.get('to');
+    if (relationFromUrl && GREETINGS[relationFromUrl]) $('relation').value = relationFromUrl;
+    $('recipient').value = (qs.get('name') || '').slice(0,45);
+    $('sender').value = (qs.get('from') || '').slice(0,45);
+    let typingTimer = null;
+    let toastTimer = null;
+    let hearts = 0;
+    let lastWishIndex = -1;
+    let audioCtx = null;
+    const photos = [...DEFAULT_PHOTOS];
+
+    /* Hiệu ứng cánh hoa - CSS thuần, không cần thư viện hay kết nối internet */
+    if (!prefersReducedMotion) {
+      for (let i=0;i<22;i++) {
+        const p=document.createElement('span');p.className='petal';p.textContent=i%4===0?'✦':'❀';
+        p.style.left=(Math.random()*100)+'%';p.style.fontSize=(10+Math.random()*15)+'px';
+        p.style.animationDuration=(12+Math.random()*16)+'s';p.style.animationDelay=(-Math.random()*27)+'s';
+        $('ambient').appendChild(p);
+      }
+    }
+    function toast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').classList.add('show');toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2900)}
+    function typeLetter() {
+      clearInterval(typingTimer);
+      const type=$('relation').value, cfg=GREETINGS[type];
+      const name=$('recipient').value.trim(); const sender=$('sender').value.trim();
+      $('letterTo').textContent=`Gửi ${name || cfg.label},`;
+      $('letterFrom').textContent=sender ? `${sender} ♡` : cfg.signature;
+      $('typedText').textContent='';$('typingCursor').classList.remove('hide');
+      let index=0; const message=cfg.body;
+      if (prefersReducedMotion) { $('typedText').textContent=message;$('typingCursor').classList.add('hide');return; }
+      typingTimer=setInterval(()=>{index=Math.min(index+2,message.length);$('typedText').textContent=message.slice(0,index);if(index===message.length){clearInterval(typingTimer);$('typingCursor').classList.add('hide');}},24);
+    }
+    $('openGift').addEventListener('click',()=>{
+      $('intro').classList.add('hide');$('gift').classList.remove('hide');$('gift').classList.add('revealed');
+      typeLetter();window.scrollTo({top:0,behavior:'instant'});burst(window.innerWidth/2,window.innerHeight*.38,16);
+    });
+    $('updateCard').addEventListener('click',()=>{typeLetter();toast('Thiệp yêu thương đã được cập nhật 💌')});
+    $('relation').addEventListener('change',typeLetter);
+    $('recipient').addEventListener('change',typeLetter);
+    $('sender').addEventListener('change',typeLetter);
+    $('shareLink').addEventListener('click',async()=>{
+      const url=new URL(location.href);url.search='';url.hash='';
+      url.searchParams.set('to',$('relation').value);
+      if($('recipient').value.trim())url.searchParams.set('name',$('recipient').value.trim());
+      if($('sender').value.trim())url.searchParams.set('from',$('sender').value.trim());
+      try{await navigator.clipboard.writeText(url.toString());toast('Đã sao chép link! Hãy gửi cho người thương 💌');}
+      catch(err){window.prompt('Sao chép đường link sau:',url.toString());}
+    });
+    $('drawWish').addEventListener('click',()=>{
+      let idx;do{idx=Math.floor(Math.random()*WISHES.length)}while(idx===lastWishIndex&&WISHES.length>1);lastWishIndex=idx;
+      $('wishOutput').style.opacity='0';setTimeout(()=>{$('wishOutput').textContent='“'+WISHES[idx]+'”';$('wishOutput').style.opacity='1'},160);
+      const r=$('drawWish').getBoundingClientRect();burst(r.left+r.width/2,r.top,8);
+    });
+    /* ===== 8. ALBUM: chọn ảnh từng ô hoặc dán URL ===== */
+    let uploadIndex=0;
+    function renderGallery(){
+      const gallery=$('gallery');gallery.replaceChildren();
+      const symbols=['🌷','💌','🌼','💞'];
+      photos.forEach((src,i)=>{
+        const frame=document.createElement('div');frame.className='photo';
+        const label=document.createElement('span');label.className='photo-label';label.textContent=`Kỷ niệm ${i+1}`;frame.appendChild(label);
+        if(src){const img=document.createElement('img');img.alt=`Ảnh kỷ niệm ${i+1}`;img.loading='lazy';img.src=src;img.onerror=()=>{img.remove();const empty=document.createElement('div');empty.className='placeholder';empty.textContent='Không tải được ảnh';frame.prepend(empty);};frame.appendChild(img);}
+        else{const empty=document.createElement('div');empty.className='placeholder';const emoji=document.createElement('div');emoji.className='emoji';emoji.textContent=symbols[i];const caption=document.createElement('div');caption.textContent='Khoảnh khắc '+(i+1);empty.append(emoji,caption);frame.appendChild(empty);}
+        const tools=document.createElement('div');tools.className='photo-tools';
+        const pick=document.createElement('button');pick.type='button';pick.textContent='📷 Thay ảnh';pick.addEventListener('click',()=>{uploadIndex=i;$('photoFile').click()});tools.appendChild(pick);
+        if(src){const remove=document.createElement('button');remove.type='button';remove.textContent='Xóa';remove.addEventListener('click',()=>{if(src.startsWith('blob:'))URL.revokeObjectURL(src);photos[i]='';renderGallery()});tools.appendChild(remove)}
+        frame.appendChild(tools);gallery.appendChild(frame);
+      });
+    }
+    $('photoFile').addEventListener('change',(e)=>{
+      const file=e.target.files?.[0];if(!file)return;
+      if(!file.type.startsWith('image/')){toast('Hãy chọn một tệp hình ảnh.');return}
+      if(file.size>12*1024*1024){toast('Ảnh vượt quá 12 MB. Vui lòng chọn ảnh nhỏ hơn.');return}
+      if(photos[uploadIndex].startsWith('blob:'))URL.revokeObjectURL(photos[uploadIndex]);
+      photos[uploadIndex]=URL.createObjectURL(file);renderGallery();e.target.value='';toast('Đã thêm ảnh vào album 🌷');
+    });
+    $('applyPhotoUrl').addEventListener('click',()=>{
+      const url=$('photoUrl').value.trim();let parsed;try{parsed=new URL(url)}catch(e){toast('Vui lòng nhập URL ảnh hợp lệ.');return}
+      if(!['https:','http:'].includes(parsed.protocol)){toast('Chỉ sử dụng đường dẫn http hoặc https.');return}
+      const index=Number($('photoSlot').value);
+      if(photos[index].startsWith('blob:'))URL.revokeObjectURL(photos[index]);photos[index]=url;renderGallery();$('photoUrl').value='';toast('Đã cập nhật đường dẫn ảnh 💗');
+    });
+    renderGallery();
+    /* ===== 9. TIM BAY + ÂM THANH WEB AUDIO NHẸ (không cần file MP3) ===== */
+    function softChime(){
+      try{
+        const Context=window.AudioContext||window.webkitAudioContext;if(!Context)return;
+        audioCtx=audioCtx||new Context();if(audioCtx.state==='suspended')audioCtx.resume();
+        const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='sine';osc.frequency.setValueAtTime(660,audioCtx.currentTime);osc.frequency.exponentialRampToValueAtTime(880,audioCtx.currentTime+.16);gain.gain.setValueAtTime(.0001,audioCtx.currentTime);gain.gain.exponentialRampToValueAtTime(.055,audioCtx.currentTime+.025);gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+.28);osc.connect(gain).connect(audioCtx.destination);osc.start();osc.stop(audioCtx.currentTime+.3);
+      }catch(e){}
+    }
+    function burst(x,y,count){if(prefersReducedMotion)return;for(let i=0;i<count;i++){
+      const h=document.createElement('span');h.className='flying-heart';h.textContent=['💗','💕','🌸','✨','💖'][Math.floor(Math.random()*5)];
+      h.style.left=(x+(Math.random()-.5)*80)+'px';h.style.top=(y+(Math.random()-.5)*30)+'px';h.style.setProperty('--dx',((Math.random()-.5)*260)+'px');h.style.setProperty('--rot',((Math.random()-.5)*100)+'deg');
+      h.style.animationDelay=(Math.random()*.25)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),2100);
+    }}
+    $('heartBtn').addEventListener('click',()=>{hearts++;$('heartCount').textContent=hearts;const r=$('heartBtn').getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,13);softChime()});
+    /* Nếu mở URL có ?open=1, tự động mở thiệp (không phát âm thanh tự động). */
+    if(qs.get('open')==='1')$('openGift').click();
+  </script>
+</body>
+</html>
